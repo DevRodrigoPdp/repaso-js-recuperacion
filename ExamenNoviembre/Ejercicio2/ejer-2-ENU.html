@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <script src="Ejercicio2.js"></script>
+    <title>Contador de Clicks y Tecla A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        
+        .click-area {
+            background: #4CAF50;
+            color: white;
+            padding: 60px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        
+        .click-area:hover {
+            background: #45a049;
+        }
+        
+        .click-area:active {
+            background: #3d8b40;
+            transform: scale(0.98);
+        }
+        
+        .key-area {
+            background: #2196F3;
+            color: white;
+            padding: 30px 20px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        
+        .reset-btn {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+        
+        .reset-btn:hover {
+            background: #cc0000;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        
+        .stat-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .stat-number {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contador de Clicks y Tecla A</h1>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <div class="stat-number" id="clickCount">0</div>
+                <div>Clicks</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number" id="keyCount">0</div>
+                <div>Tecla A</div>
+            </div>
+        </div>
+        
+        <div class="click-area" id="clickArea">
+            Haz click aquí
+        </div>
+        
+        <div class="key-area" id="keyArea">
+            Presiona la tecla A
+        </div>
+        
+        <button class="reset-btn" id="resetBtn">Reiniciar Contadores</button>
+    </div>
+</body>
+</html>
