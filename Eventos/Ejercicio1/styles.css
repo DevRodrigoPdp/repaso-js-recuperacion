@@ -1,0 +1,12 @@
+ body {
+     margin: 0;
+     height: 100vh;
+     /* Para que todo el fondo sea clickable */
+    display: block;
+ }
+
+ button {
+     padding: 20px;
+     font-size: 18px;
+     cursor: pointer;
+ }
