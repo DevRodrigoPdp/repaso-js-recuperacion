@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Municipal</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Gestión de Biblioteca</h1>
+        
+        <div class="botones">
+            <button onclick="mostrarLibros()">Mostrar Libros</button>
+            <button onclick="generarInforme()">Generar Informe</button>
+            <button onclick="librosModernos()">Filtrar Siglo XX</button>
+            <button onclick="ordenarPorExtension()">Ordenar por Páginas</button>
+        </div>
+
+        <div id="informe" class="stats-container"></div>
+
+        <table id="tablaLibros">
+            <thead>
+                <tr>
+                    <th >Título</th>
+                    <th >Autor</th>
+                    <th >Año</th>
+                    <th >Estado</th>
+                    <th >Páginas</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpoTabla">
+                </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
