@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biblioteca Digital 📚</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Biblioteca 📖</h1>
+        
+        <div class="input-section">
+            <input type="text" id="book-isbn" placeholder="ISBN (ID único)">
+            <input type="text" id="book-title" placeholder="Título del libro">
+            <input type="text" id="book-author" placeholder="Autor">
+            <input type="number" id="book-pages" placeholder="Número de páginas">
+            
+            <label class="checkbox-container">
+                ¿Leído? <input type="checkbox" id="book-read">
+            </label>
+
+            <button id="add-book-btn">Registrar Libro</button>
+        </div>
+
+        <div class="stats-section">
+            <h3>Estadísticas Rápidas 📊</h3>
+            <div id="stats-grid">
+                <p>Total libros: <span id="stat-total">0</span></p>
+                <p>Promedio páginas: <span id="stat-promedio">0</span></p>
+                <p>Libro más largo: <span id="stat-largo">---</span></p>
+                <p>Pendientes de leer: <span id="stat-pendientes">---</span></p>
+            </div>
+        </div>
+
+        <div class="list-section">
+            <h3>Catálogo de Libros:</h3>
+            <ul id="book-list">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

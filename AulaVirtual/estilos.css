@@ -1,0 +1,106 @@
+/* estilos.css */
+
+:root {
+    --primary-color: #6c5ce7;
+    --secondary-bg: #f0f3f7;
+    --accent-color: #00b894;
+    --text-main: #2d3436;
+    --white: #ffffff;
+    --shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-bg);
+    color: var(--text-main);
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.container {
+    background: var(--white);
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 12px 15px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+button#add-student-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+button#add-student-btn:hover {
+    background-color: #5849c4;
+    transform: translateY(-2px);
+}
+
+.list-section h3 {
+    border-bottom: 2px solid var(--secondary-bg);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+ul#student-list {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: var(--secondary-bg);
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    border-left: 5px solid var(--accent-color);
+}
+
+li strong {
+    color: var(--primary-color);
+    font-size: 1.1rem;
+}
+
+li span {
+    font-size: 0.9rem;
+    color: #636e72;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Inventario con Map</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Inventario</h1>
+        
+        <div class="input-section">
+            <input type="text" id="prod-name" placeholder="Nombre del producto">
+            <input type="number" id="prod-qty" placeholder="Cantidad (ej: 10)">
+            <button id="add-inv-btn">Actualizar Stock</button>
+        </div>
+
+        <div class="product-list">
+            <h3>Productos en Almacén:</h3>
+            <ul id="inventory-list">
+                </ul>
+        </div>
+
+        <div class="stats">
+            <p>Tipos de productos únicos: <span id="unique-items">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
