@@ -10,7 +10,7 @@ let informacion = new Map([
     ["total", 0]
 ]);
 
-// 1. Cargar productos en el Select
+
 fetch("productos.json")
     .then(response => {
         if (!response.ok) throw new Error("No encontrado");
