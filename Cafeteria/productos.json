@@ -1,0 +1,21 @@
+{
+  "sede": "Central",
+  "datos_tienda": {
+    "zonas": [
+      {
+        "nombre_zona": "Barra Izquierda",
+        "productos_zona": [
+          { "id": 1, "nombre": "Espresso", "info": { "coste": 1.50, "disponible": true, "alergenos": ["ninguno"] } },
+          { "id": 2, "nombre": "Latte", "info": { "coste": 2.50, "disponible": true, "alergenos": ["lácteos"] } }
+        ]
+      },
+      {
+        "nombre_zona": "Vitrina Principal",
+        "productos_zona": [
+          { "id": 3, "nombre": "Croissant", "info": { "coste": 1.80, "disponible": true, "alergenos": ["gluten"] } },
+          { "id": 4, "nombre": "Muffin", "info": { "coste": 2.20, "disponible": false, "alergenos": ["gluten", "huevo"] } }
+        ]
+      }
+    ]
+  }
+}
