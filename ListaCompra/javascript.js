@@ -11,9 +11,7 @@ document.getElementById("add-btn").addEventListener("click", anadirElemento);
 
 function anadirElemento() {
     let valor = input.value.split(",");
-    
     if (valor.length < 2) return;
-
     let nombre = valor[0].trim();
     let precio = parseFloat(valor[1].trim());
 

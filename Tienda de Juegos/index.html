@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStock JS | Gestión de Inventario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>GameStock 🕹️</h1>
+            <p>Panel de Control de Inventario v1.0</p>
+        </header>
+
+        <main>
+            <section class="card">
+                <h2>Añadir Videojuego</h2>
+                <div class="form-group">
+                    <input type="text" id="game-input" placeholder="Nombre, Categoría, Precio, Stock">
+                    <button id="add-btn">Registrar Juego</button>
+                </div>
+                <small>Usa el formato: Nombre, Categoría, Precio, Cantidad</small>
+            </section>
+
+            <section class="controls">
+                <input type="text" id="search-bar" placeholder="🔍 Buscar por nombre...">
+                <div id="stats" class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">Categorías:</span>
+                        <span id="cat-count" class="stat-value">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">Valor Total:</span>
+                        <span class="stat-value"><span id="total-value">0.00</span>€</span>
+                    </div>
+                </div>
+            </section>
+
+            <ul id="game-list" class="game-grid">
+                </ul>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

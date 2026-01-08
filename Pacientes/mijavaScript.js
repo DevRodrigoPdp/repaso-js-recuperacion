@@ -12,7 +12,7 @@ const pacientes = [
     // ["Davidd", "Hernanddez Castrdo", 19, "76kg", "89012345I"],
 
 ];
-//["Sofia", "Dominguez Molina", 42, "71kg", "90123456J"]
+
 
 const btnMostrar = document.getElementById("btnMostrar")
 const btnEstadisticas = document.getElementById("btnEstadisticas")
