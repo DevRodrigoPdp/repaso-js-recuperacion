@@ -90,5 +90,5 @@ function eliminarProducto(elemento, precio) {
     informacion.set("total", total);
 
     totalProductos.innerText = cant;
-    importeTotal.innerText = total.toFixed(2) + "€";
+    importeTotal.innerText = total.toFixed(2);
 }
