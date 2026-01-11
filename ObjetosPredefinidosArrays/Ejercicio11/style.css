@@ -1,0 +1,55 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+.display-box {
+    background: #282c34; 
+    color: #61dafb;
+    padding: 20px;
+    border-radius: 8px;
+    height: 300px;
+    overflow-y: auto; /* Para que aparezca scroll si hay muchos números */
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+.rules {
+    text-align: left;
+    background: #fffbe6;
+    border-left: 5px solid #ffcc00;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.rules h3 {
+    margin-top: 0;
+    color: #856404;
+}

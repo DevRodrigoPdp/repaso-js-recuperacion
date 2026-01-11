@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicios de Eventos - Práctica</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        section { border-bottom: 2px solid #ccc; padding: 20px 0; }
+        
+        /* Estilos Ejercicio 1 */
+        #cuadro {
+            width: 300px;
+            height: 300px;
+            border: 2px solid black;
+            background-color: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Estilos Ejercicio 2 */
+        .galeria { display: flex; gap: 10px; }
+        .caja-color {
+            width: 100px;
+            height: 100px;
+            transition: all 0.3s ease; /* Para que el cambio sea suave */
+            cursor: pointer;
+        }
+        .rojo { background-color: red; }
+        .azul { background-color: blue; }
+        .verde { background-color: green; }
+
+        /* Estilos Ejercicio 3 */
+        .error-texto { color: red; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>1. Coordenadas del Ratón</h2>
+        <div id="cuadro">Mueve el ratón aquí</div>
+        <p id="infoCoordenadas">El ratón está fuera</p>
+    </section>
+
+    <section>
+        <h2>2. Galería de Estilos</h2>
+        <div class="galeria">
+            <div class="caja-color rojo"></div>
+            <div class="caja-color azul"></div>
+            <div class="caja-color verde"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. Contador de Caracteres (Máx 50)</h2>
+        <textarea id="mensaje" cols="30" rows="5" placeholder="Escribe algo..."></textarea>
+        <p id="contador">Caracteres: 0</p>
+    </section>
+
+    <section>
+        <h2>4. Detector de Teclas</h2>
+        <input type="text" id="tecladoInput" placeholder="Pulsa teclas aquí...">
+        <div id="resultadoTecla" style="margin-top: 10px; font-weight: bold;"></div>
+    </section>
+
+    <script src="eventos.js"></script>
+</body>
+</html>
